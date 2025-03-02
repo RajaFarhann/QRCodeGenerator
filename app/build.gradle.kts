@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.rajafarhan.qrcodegenerator"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.rajafarhan.qrcodegenerator"
@@ -66,4 +66,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //QR Code
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
 }
